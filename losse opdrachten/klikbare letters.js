@@ -2,13 +2,13 @@
 <html>
 <body>
 
-<p>Click op de letter om de alert box te laten zien</p>
+<p>Click on the letter to activate the alert box</p>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">click!</button>
 
 <script>
 function myFunction() {
-  alert("Hello! I am an alert box!");
+  alert("Hello! you've clicked on the letter!");
 }
 </script>
 
