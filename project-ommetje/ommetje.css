@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+}
+
+#wrapper{
+    width: 100%;
+}
+
+#topheader{
+    background-color: blue;
+    font-family: "open sans",sans-serif;
+    font-size: 15pt;
+    padding: 10px 20px 10px 20px;
+    height: 25px;
+}
+
+#topheader .name{
+    float: left
+}
+
+#topheader .xp{
+    float: right
+}
+.getal{
+    color: purple;
+    font-size: 20px;
+}
+.xp{
+    font-size: 15px;
+}
+body {
+    background-image: url(https://cdn.discordapp.com/attachments/544505134063943701/810811382206431282/heide.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -50px;
+  }
