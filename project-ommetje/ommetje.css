@@ -33,3 +33,19 @@ body {
     background-repeat: no-repeat;
     background-position: 0px -50px;
   }
+#startOmmetje .startKnop {
+    background-color: rgb(148, 12, 148);
+    color: white;
+    border-radius: 25px;
+    margin: 10px;
+    position: absolute;
+    left: 30%;
+    top: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#startOmmetje .m20 {
+    font-size: 20px;
+}
