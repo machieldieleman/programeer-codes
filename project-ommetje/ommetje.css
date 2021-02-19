@@ -54,13 +54,13 @@ body {
 #startOmmetje .timer {
     font-family: "Mont", sans-serif;
     position: relative;
-    top: -810px;
+    top: -100px;
     padding-left: 15px;
 }
 
 .hoofd{
     position: absolute;
-    bottom:0;
+    bottom: 475px;
     width:100%;
 }
 .center{
