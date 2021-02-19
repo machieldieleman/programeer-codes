@@ -46,6 +46,26 @@ body {
     padding-left: 30px;
     padding-right: 30px;
 }
+
 #startOmmetje .m20 {
     font-size: 20px;
+}
+
+#startOmmetje .timer {
+    font-family: "Mont", sans-serif;
+    position: relative;
+    top: -810px;
+    padding-left: 15px;
+}
+
+.hoofd{
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
+.center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

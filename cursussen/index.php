@@ -1,3 +1,6 @@
+<?php
+    SESSION_START();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,10 +70,12 @@
                         <td>'.$cursus['naam'].'</td>
                         <td>'.$cursus['omschrijving'].'</td>
                         <td>'.$cursus['prijs'].'</td>
-                        <td><button type="submit" value='.$cursus['naam'].' name="id">Inschrijven</input>
+                        <td><a href="index.php?ingelogd&cursus='.$cursus['naam'].'">inschrijven</a></td>
                     </tr>
                     ';
+                   
                 }
+                echo 'je bent ingeschrven voor cursus: '.$_GET['cursus'];
                 echo '</table></form>';
             }else {
                 echo '</tr>';
@@ -85,11 +90,6 @@
                 }
                 echo '</table></form>';
             }
-            if($_POST) 
-                
-
-            if($_POST)
-                header('location: index.php?ingelogd?cursus='.$cursus.'');
             ?>
     </body>
 </html>
