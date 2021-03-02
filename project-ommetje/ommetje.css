@@ -1,71 +1,282 @@
-body{
-    margin: 0px;
-}
-
-#wrapper{
-    width: 100%;
-}
-
-#topheader{
-    background-color: blue;
-    font-family: "open sans",sans-serif;
-    font-size: 15pt;
-    padding: 10px 20px 10px 20px;
-    height: 25px;
-}
-
-#topheader .name{
-    float: left
-}
-
-#topheader .xp{
-    float: right
-}
-.getal{
-    color: purple;
-    font-size: 20px;
-}
-.xp{
-    font-size: 15px;
-}
 body {
-    background-image: url(https://cdn.discordapp.com/attachments/544505134063943701/810811382206431282/heide.jpg);
-    background-repeat: no-repeat;
-    background-position: 0px -50px;
-  }
-#startOmmetje .startKnop {
-    background-color: rgb(148, 12, 148);
-    color: white;
-    border-radius: 25px;
-    margin: 10px;
-    position: absolute;
-    left: 30%;
-    top: 350px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    background-color: #F3F2ED ;
 }
 
-#startOmmetje .m20 {
-    font-size: 20px;
-}
 
-#startOmmetje .timer {
-    font-family: "Mont", sans-serif;
+.lefttop {
     position: relative;
-    top: -100px;
-    padding-left: 15px;
+    float: left;
+    font-size: 300%;
 }
 
-.hoofd{
-    position: absolute;
-    bottom: 475px;
-    width:100%;
+.xp {
+    position: relative;
+    float: right;
+    top: 20px;
+    font-size: 200%;
 }
-.center{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+.righttop {
+    position: relative;
+    float: right;
+    font-size: 300%;
+    color: purple;
+}
+
+.imgb {
+    z-index: -1;
+    position: relative;
+    top: -130px;
+    height: 1000px;
+}
+
+.hersen {
+    z-index: -1;
+    position: absolute;
+    top: 410px;
+    left: 250px;
+    height: 400px;
+}
+
+.inverted {
+    background-color: #F3F2ED;
+    position: absolute;
+    top: 740px;
+    width: 1550px;
+    height: 900px;
+    border-radius: 50%;
+    left: -490px;
+  }
+
+  .o {
+      position: absolute;
+      top: 790px;
+      left: 90px;
+      color: purple;
+      font-size: 500%;
+  }
+
+  .tijd {
+    position: absolute;
+    top: 830px;
+    left: 150px;
+    font-size: 300%;
+  }
+
+  .min {
+    position: absolute;
+    top: 840px;
+    left: 250px;
+  }
+
+  .button {
+      position: absolute;
+      top: 1000px;
+      left: 285px;
+      background-color: purple;
+      border-radius: 50px;
+      color: white;
+  }
+
+  .teams1 {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    color: purple;
+    font-size: 300%;
+  }
+
+  .XP {
+    position: absolute;
+    top: 60px;
+    left: 600px; 
+    font-size: 150%;
+    text-decoration: underline;
+  }
+[11:49]
+.T { 
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    font-size: 170%;
+  }
+
+  .bekijk {
+    position: absolute;
+    top: 230px;
+    left: 60px;
+    color: purple;
+    font-size: 170%;
+  }
+
+  .team {
+    position: absolute;
+    top: 300px;
+    left: 300px; 
+    font-size: 150%;
+    text-decoration: underline;
+  }
+
+  #ranglijst {
+    z-index: 1;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FFFFFF;
+    height: 510px;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    right: 10%;
+    padding: 10px;
+    margin-top: 0px;
+    }
+
+
+    #medailles {
+      z-index: -1;
+      border-radius: 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #FFFFFF;
+      height: 1400px;
+      width: 80%;
+      left: 10%;
+      position: absolute;
+      right: 10%;
+      padding: 10px;
+      margin-top: 620px;
+    }
+
+
+.m1 {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    color: purple;
+    font-size: 260%;
+}
+
+.img {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  height: 400px;
+  width: 300px;
+}
+
+.img1{
+  position: absolute;
+  top: 90px;
+  left: 400px;
+  height: 400px;
+  width: 300px;
+}
+.img2 {
+  position: absolute;
+  top: 500px;
+  left: 50px;
+  height: 400px;
+  width: 300px;
+}
+.img3 {
+  position: absolute;
+  top: 520px;
+  left: 400px;
+  height: 400px;
+  width: 300px;
+}
+.img4 {
+  position: absolute;
+  top: 950px;
+  left: 50px;
+  height: 400px;
+  width: 300px;
+}
+.img5 {
+  position: absolute;
+  top: 950px;
+  left: 400px;
+  height: 400px;
+  width: 300px;
+}
+[11:49]
+#doneren {
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FFFFFF;
+  height: 490px;
+  width: 80%;
+  left: 10%;
+  position: absolute;
+  right: 10%;
+  padding: 10px;
+  margin-top: 2150px;
+}
+
+.doneer {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  font-size: 260%;
+  color: purple;
+}
+
+.dtext {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  font-size: 260%;
+}
+
+.buttond {
+  position: absolute;
+  top: 400px;
+  left: 270px;
+  background-color: orange;
+  border-radius: 100px;
+  color: white;
+}
+
+#stats {
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FFFFFF;
+  height: 490px;
+  width: 80%;
+  left: 10%;
+  position: absolute;
+  right: 10%;
+  padding: 10px;
+  margin-top: 2150px;
+}
+
+.texts {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-size: 260%;
+  color: purple
+}
+
+.buttons {
+  position: absolute;
+  top: 200px;
+  left: 220px;
+  background-color: orange;
+  border-radius: 100px;
+  color: white;
+}
+
+.buttono {
+  position: absolute;
+  top: 100px;
+  left: 220px;
+  background-color: purple;
+  border-radius: 100px;
+  color: white;
 }
