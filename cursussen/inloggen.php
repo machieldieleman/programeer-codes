@@ -1,5 +1,9 @@
 <?php
     SESSION_START();
+    if(!isset($_SESSION['loggedIn'])) {
+        header("location: /cursussen/inloggen.php"):;
+       exit;
+    }
 ?>
 
 <html>
@@ -28,7 +32,8 @@
             $melding = 'vul beide velden in!';
         }  else {
                 if ($loginnaam == $user && $wachwoord == $password) {
-                    header('Location: index.php?ingelogd');
+                    $_SESSION['loggedIn'] = $_POST['user']
+                    header('Location: index.php');
                 }  else {
                     $melding = 'verkeerde gebruikersnaam of wachtwoord';
                 }
