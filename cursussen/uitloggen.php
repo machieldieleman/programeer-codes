@@ -4,5 +4,5 @@ session_start();
 
 session_destroy();
 
-header("location: /cursussen/inloggen.php"):
+header("location: /programeer-codes/cursussen/inloggen.php");
 

@@ -19,7 +19,7 @@
             echo '<script type="text/javascript">console.log('. str_replace('<', '\\x3C', json_encode($msg)). ');</script>';}
         
 
-        if(isset($_GET['ingelogd'])) {
+        if(isset($_SESSION['loggedIn'])) {
             $logged = 'uitloggen';
         }
 
@@ -52,8 +52,9 @@
     <h1>Inschrijven</h1>
     <a href="">home</a>
     <a href="inloggen.php"><?php echo $logged;?></a><br><br>
-    <form action="?" method="POST">
+    <form action="?" method="POST"> 
         <table border="1" cellspacing="0" cellpadding="5">
+            
 
         <tr>
             <td>Naam</td>
@@ -61,8 +62,7 @@
             <td>Prijs</td>
 
             <?php
-            
-            if(isset($_GET['ingelogd'])) {
+            if(isset($_SESSION['loggedIn'])) {
                 echo '<td>Inschrijven</td></tr>';
                 foreach($cursussen as $cursus) {
                     echo '
@@ -75,7 +75,7 @@
                     ';
                    
                 }
-                echo 'je bent ingeschrven voor cursus: '.$_GET['cursus'];
+                echo 'je bent ingeschrven voor cursus: '. $_GET['cursus'];
                 echo '</table></form>';
             }else {
                 echo '</tr>';
