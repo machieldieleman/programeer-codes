@@ -51,7 +51,8 @@
 
     <h1>Inschrijven</h1>
     <a href="">home</a>
-    <a href="inloggen.php"><?php echo $logged;?></a><br><br>
+    <a href="inloggen.php">inloggen</a><br><br>
+    <a href="uitloggen.php">uitloggen</a><br><br>
     <form action="?" method="POST"> 
         <table border="1" cellspacing="0" cellpadding="5">
             
@@ -75,8 +76,10 @@
                     ';
                    
                 }
-                echo 'je bent ingeschrven voor cursus: '. $_GET['cursus'];
+                if(isset($_GET['cursus'])){
+                echo 'je bent ingeschreven voor cursus: '. $_GET['cursus'];
                 echo '</table></form>';
+                }
             }else {
                 echo '</tr>';
                 foreach($cursussen as $cursus) {

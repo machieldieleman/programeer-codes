@@ -4,6 +4,10 @@
     
 ?>
 
+<?php
+$conn = mysqli_connect('localhost','root','','cursussen');
+?>
+
 <html>
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -18,18 +22,18 @@
 </ul>
 <?php
 
-    if($_POST) {
-
-        $user = 'Machiel';
-        $password = '123';
-
+    if($_POST) { 
         $loginnaam = $_POST['loginnaam'];
-        $wachwoord = $_POST['wachtwoord'];
-
-        if (empty($loginnaam) or empty($wachwoord)) {
+        $wachtwoord = $_POST['wachtwoord'];
+        
+        if (empty($loginnaam) or empty($wachtwoord)) {
             $melding = 'vul beide velden in!';
         }  else {
-                if ($loginnaam == $user && $wachwoord == $password) {
+            
+            $sql="select * from users where username = '$loginnaam' and password = '$wachtwoord'";
+            $result = mysqli_query($conn, $sql);
+            
+                if (mysqli_num_rows($result) == 1){
                     $_SESSION['loggedIn'] = $_POST['loginnaam'];
                     header('Location: index.php');
                 }  else {
