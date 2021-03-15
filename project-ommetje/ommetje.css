@@ -160,7 +160,7 @@ body {
     }
 
 
-.m1 {
+.m1r {
     position: absolute;
     top: 0px;
     left: 50px;
@@ -321,6 +321,11 @@ body {
   width: 75%;
   height: 60%;
   top: 20%;
-  font-size: 150px;
   border-radius: 100px;
+  font-size: 50px;
+}
+.popup .pic1 {
+  float: left;
+  width: 30%;
+  text-align: center;
 }

@@ -74,8 +74,8 @@ if (isset($_GET['ingelogd'])) {
 </form>      
 </body>
 <?php
-$sql = "INSERT INTO MyGuests (firstname, lastname, email)
-VALUES ('John', 'Doe', 'john@example.com')";
+$sql = "INSERT INTO users (username, password, full_name)
+VALUES ('', '', '')";
 
 if (mysqli_query($conn, $sql)) {
   echo "New record created successfully";
