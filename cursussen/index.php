@@ -88,6 +88,7 @@
                         <td>'.$cursus['naam'].'</td>
                         <td>'.$cursus['omschrijving'].'</td>
                         <td>'.$cursus['prijs'].'</td>
+                        <input type="submit" name="submit" value="Submit">
                     </tr>
                     ';
                 }

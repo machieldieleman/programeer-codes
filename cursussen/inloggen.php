@@ -19,6 +19,7 @@ $conn = mysqli_connect('localhost','root','','cursussen');
 <ul>
     <li><a href='index.php'>home</a></li>
     <li><a href='inloggen.php'>inloggen</a></li>
+    <li><a href='overzicht-users.php'>overzicht</a></li>
 </ul>
 <?php
 
@@ -74,6 +75,7 @@ if (isset($_GET['ingelogd'])) {
 </form>      
 </body>
 <?php
+if ($_POST){
 $sql = "INSERT INTO users (username, password, full_name)
 VALUES ('', '', '')";
 
@@ -82,6 +84,6 @@ if (mysqli_query($conn, $sql)) {
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-
+}
 mysqli_close($conn);
 ?>
