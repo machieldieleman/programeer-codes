@@ -4,6 +4,7 @@
     <link href="ommetje.css?<?=time();?>" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="ommetje.js"></script>
 
     <meta charset="UTF-8">
     <title>Ommetje</title>
@@ -34,7 +35,7 @@
 <div id="medailles">
 <h1 class="m1">Medailles</h1>
 <div class="m1r">
-<img src="m1.png" class="img">
+<div onclick="openPopup('popup')"><img src="m1.png" class="img"> </div>
 </div>
 <img src="m2.png" class="img1">
 <img src="m3.png" class="img2">
@@ -63,19 +64,22 @@
 
 </div>
 
-<div class="popup"><h2>The Hiker medal</h2>Walk a minimum of 20 minutes daily. This will reward you with 5 XP per day.
+<div id="popup"><h2>The Hiker medal</h2>Walk a minimum of 20 minutes daily. This will reward you with 5 XP per day.
   <div class='pics'>  
-    <div class="pic1">4x<br><img src="m7.png" height="150" />bronze</div>
-    <div class="pic1">15x<img src="m7.png" height="150" />silver</div>
-    <div class="pic1">35x<img src="m7.png" height="150" />gold</div>
-    <div class="pic1">55x<img src="m7.png" height="150" />ruby</div>
-    <div class="pic1">75x<img src="m7.png" height="150" />sapphire</div>
-    <div class="pic1">100x<img src="m7.png" height="150" />diamond</div>
-    <div class="pic1">200x<img src="m7.png" height="150" />emerald</div>
-    <div class="pic1">300x<img src="m7.png" height="150" />amethyst</div>
-    <div class="pic1">400x<img src="m7.png" height="150" />pearl</div>
-    <hr>
-  </div>  
+    <div class="grid"><div class="img-div"><img class="pic1" src="m7.png" height="150"/></div> </div>
+    <div class="grid"><div class="img-div"><img class="pic1" src="m7.png" height="150"/></div> </div>
+    <div class="grid"><div class="img-div"><img class="pic1" src="m7.png" height="150"/></div> </div>
+    <div class="grid"><div class="img-div"><img class="pic1" src="m7.png" height="150"/></div> </div>
+    <div class="grid"><div class="img-div"><img class="pic1" src="m7.png" height="150"/></div> </div>
+    <div class="grid"><div class="img-div"><img class="pic1" src="m7.png" height="150"/></div> </div>
+    <div class="grid"><div class="img-div"><img class="pic1" src="m7.png" height="150"/></div> </div>
+    <div class="grid"><div class="img-div"><img class="pic1" src="m7.png" height="150"/></div> </div>
+    <div class="grid"><div class="img-div"><img class="pic1" src="m7.png" height="150"/></div> </div>
+    
+    
+  </div>
+  <hr>
+  <button class="close-button" onclick="closePopup('popup')">close</button>
 </div>
 
 <script>

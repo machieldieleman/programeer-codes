@@ -51,7 +51,7 @@
 
     <h1>Inschrijven</h1>
     <a href="">home</a>
-    <a href="inloggen.php">inloggen</a><br><br>
+    
     <a href="uitloggen.php">uitloggen</a><br><br>
     <form action="?" method="POST"> 
         <table border="1" cellspacing="0" cellpadding="5">
@@ -88,7 +88,6 @@
                         <td>'.$cursus['naam'].'</td>
                         <td>'.$cursus['omschrijving'].'</td>
                         <td>'.$cursus['prijs'].'</td>
-                        <input type="submit" name="submit" value="Submit">
                     </tr>
                     ';
                 }

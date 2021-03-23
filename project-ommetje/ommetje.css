@@ -311,7 +311,7 @@ body {
 .hidden {
   display: none;
 }
-.popup {
+#popup {
   z-index: 500;
   position: fixed;
   left: 10%;
@@ -319,13 +319,54 @@ body {
   padding: 30px;
   box-sizing: border-box;
   width: 75%;
-  height: 60%;
+  height: 70%;
   top: 20%;
   border-radius: 100px;
   font-size: 50px;
+  display: block;
+  box-shadow: 0px 0px 1000px 10px rgba(0,0,0,0.5);
 }
-.popup .pic1 {
-  float: left;
-  width: 30%;
+.pic1 {
+  position: relative;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin: auto;
+  margin-top: 3%;
+  
+}
+.pics{
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.icon_header{
+  text-align: center;
+  margin-bottom: -20px;
+}
+.icon_footer{
+  text-align: center;
+  
+}
+.grid{
+  height: 370px;
+  }
+.img-div::before {
+  content: "15x";
+  margin-top: 5px;
+}
+.img-div::after {
+  content: "Bronze"
+  
+}
+.img-div{
+  text-align: center;
+}
+.close-button{
+  width: 200px;
+  height: 50px;
+  font-size: 20pt;
+  margin-left: 250px;
+  
 }
