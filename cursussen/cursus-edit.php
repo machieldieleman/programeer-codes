@@ -1,3 +1,6 @@
+<?php include 'header.php'?>
+
+
 <?php
 $sql = "SELECT * FROM cursussen ";
 $con = mysqli_connect($host, $user, $password, $db_name);

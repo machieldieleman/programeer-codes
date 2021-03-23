@@ -1,3 +1,6 @@
+<?php include 'header.php'?>
+
+
 <html>
 <head>
     <title>Overzicht users</title>

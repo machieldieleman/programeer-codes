@@ -1,3 +1,5 @@
+<?php include 'header.php'?>
+
 <?php
     
     SESSION_START();
@@ -12,15 +14,12 @@ $conn = mysqli_connect('localhost','root','','cursussen');
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>cursussen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <body>
 <h2>cursussen</h2>
-<ul>
-    <li><a href='index.php'>home</a></li>
-    <li><a href='inloggen.php'>inloggen</a></li>
-    <li><a href='overzicht-users.php'>overzicht</a></li>
-</ul>
+
 <?php
 
     if($_POST) { 
@@ -58,32 +57,21 @@ if (isset($_GET['ingelogd'])) {
 }
 ?>
 <form action='' method='post'>
-    <table>
-        <tr>
-            <td>Gebruiker:</td>
-            <td><input type='text' name='loginnaam'/></td>
-        </tr>
-        <tr>
-            <td>Wachtwoord:</td>
-            <td><input type='password' name='wachtwoord'/></td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td><input type='submit' name='submit' value='inloggen'/></td>
-        </tr>
-    </table> 
-</form>      
-</body>
-<?php
-if ($_POST){
-$sql = "INSERT INTO users (username, password, full_name)
-VALUES ('', '', '')";
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
 
-if (mysqli_query($conn, $sql)) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-}
-mysqli_close($conn);
-?>
+
+
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="loginnaam" placeholder="login">
+      <input type="password" id="password" class="fadeIn third" name="wachtwoord" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+
+
+  </div>
+</div>    
+</body>

@@ -1,3 +1,6 @@
+<?php include 'header.php'?>
+
+
 <?php
     SESSION_START();
 ?>
@@ -7,6 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Cursus</title>
 </head>
 <body>
@@ -50,9 +54,7 @@
 
 
     <h1>Inschrijven</h1>
-    <a href="">home</a>
-    
-    <a href="uitloggen.php">uitloggen</a><br><br>
+
     <form action="?" method="POST"> 
         <table border="1" cellspacing="0" cellpadding="5">
             
