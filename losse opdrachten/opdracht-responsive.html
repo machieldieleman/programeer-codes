@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+}
+.left {
+  background-color:#2196F3;
+  padding:20px;
+  float:left;
+  width:20%; 
+}
+.right {
+  background: purple;
+  padding:20px;
+  float:left;
+  width:80%; 
+}
+@media screen and (max-width:880px) and (min-width:641px)  {
+  .left, .right {
+    width:100%; 
+  }
+}
+@media screen and (max-width:640px) and (min-width:0px) {
+  .left{
+    display: none;
+  }
+  .right{
+    width: 100%;
+  }
+}
+@media screen and (max-width:1500px) and (min-width:881px) {
+  .left{
+    width: 20%;
+  }
+  .right{
+    width: 80%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="left">
+  <p>Left</p>
+</div>
+<div class="right">
+  <p>Right</p>
+</div>
+</body>
+</html>
