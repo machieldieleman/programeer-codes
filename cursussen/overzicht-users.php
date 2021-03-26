@@ -1,12 +1,6 @@
 <?php include 'header.php'?>
 
 
-<html>
-<head>
-    <title>Overzicht users</title>
-</head>
-<body>
-
 <h2>Overzicht gebruikers</h2>
 
 <?php
