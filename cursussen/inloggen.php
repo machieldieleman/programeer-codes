@@ -59,11 +59,6 @@ if (isset($_GET['ingelogd'])) {
 <form action='' method='post'>
 <div class="wrapper fadeInDown">
   <div id="formContent">
-    <!-- Tabs Titles -->
-
-
-
-    <!-- Login Form -->
     <form>
       <input type="text" id="login" class="fadeIn second" name="loginnaam" placeholder="login">
       <input type="password" id="password" class="fadeIn third" name="wachtwoord" placeholder="password">
