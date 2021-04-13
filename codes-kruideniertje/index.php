@@ -45,7 +45,7 @@ function test_input($data) {
 }
 ?>
 
-<p><span class="error">* required field</span></p>
+<p><span class="error">* required fields</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
