@@ -1,62 +1,18 @@
 <html>
 <head>
-    <link rel='stylesheet' type='text/css' href='css-style.css'/>
+    <link rel='stylesheet' type='text/css' href='css-style.css?time=<?php echo time() ?>'/>
     <title>Het Kruideniertje</title>
+    <script src="https://kit.fontawesome.com/8d17560fbd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>project week 3</h1>
-    <?php
-// define variables and set to empty values
-$nameErr = $emailErr = $passwordErr = "";
-$name = $email = $password = "";
+<div class="mainscreen">
+<ul>
+<li><a class="active" href="#home"><i class="fa fa-home"></i></a></li>
+<li><a href="#contact"><i class="fas fa-user-circle"></i></a></li>
+<li><a href="#news"><i class="fas fa-info-circle"></i></a></li>
+<li><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
+</div>
+<div class="product" style="text-align:center;margin-left:8%;margin-right:45%;padding:1px 16px;">Producten</div>
+<div class="container">
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-  if (empty($_POST["password"])) {
-    $passwordErr = "password is required";
-  } else {
-    $password = test_input($_POST["password"]);
-  }
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
-
-<p><span class="error">* required fields</span></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
-  <br><br>
-  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
-  <br><br>
-  Password: <input type='password' name='password' value='<?php echo $password;?>'>
-  <span class="error">* <?php echo $passwordErr;?></span>
-  <br><br>
-  <input type="submit" name="submit" value="Submit">  
-</form>
 </body>
-</html>
