@@ -4,6 +4,10 @@ if (!isset($_SESSION['role'])){
    
 }
 require 'connection.php';
+if(isset($_SESSION["user"])){
+    header("Location: index.php");
+
+}
 
 ?>
 <head>
