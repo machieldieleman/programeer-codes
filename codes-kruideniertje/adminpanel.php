@@ -6,6 +6,7 @@
     <script src="https://kit.fontawesome.com/8d17560fbd.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <h1>Adminpanel</h1>
 <div class="mainscreen">
 <ul>
 <li><a class="active" href="adminpanel.php"><i class="fa fa-home"></i></a></li>
