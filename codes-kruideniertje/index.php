@@ -65,6 +65,29 @@ include "connection.php";
 	</form>
 	<script src="numblock.js"></script>
 </div>
-<div class="product-field"></div>
+<div class="product-field">
+	<?php
+	if(isset($_SESSION['artikelen'])){
+	foreach($_SESSION['artikelen'] as $product){
+		echo '
+		<div class="product">
+		<table>
+			<tr>
+				<td>productnaam:</td>
+				<td>'.$product['description'].'</td>
+			</tr>
+			<tr>
+				<td>prijs:</td>
+				<td>'.$product['price'].'</td>
+			</tr>
+		</table>
+		</div>	
+		';
+	}
+}
+	?>
+		
+</div>
+
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Adminpanel</title>
+    <title>Userpanel</title>
     <link rel='stylesheet' type='text/css' href='css-style.css?time=<?php echo time() ?>'/> 
     <script src="https://kit.fontawesome.com/8d17560fbd.js" crossorigin="anonymous"></script>
 </head>

@@ -31,7 +31,8 @@ ul {
       transform: translate(-50%, -50%);    
       border-radius: 14px;   
       padding-bottom: 100px;    
-      width: 520px;}
+      width: 520px;
+    }
   
   #container{
         width: 0px;
@@ -104,7 +105,13 @@ ul {
   margin-top: 10px;
 }
 .product-field{
-  color: #000;
-  left: 50%;
-  top: 20%;
+  left: 13%;
+  top: 3%;
+  height: 450px;
+  width: 500px;
+  position:absolute;
+  border: 1px solid black;
+}
+.product-field table{
+  width: 100%;
 }
