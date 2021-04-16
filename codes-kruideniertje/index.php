@@ -1,6 +1,6 @@
 <?php
-session_start();
 include "connection.php";
+$price = 0;
 ?>
 <html>
 <head>
@@ -26,14 +26,12 @@ include "connection.php";
 
 		}
 	}
+
 	?>
 </head>
 <body>
 <div class="mainscreen">
 <ul>
-<li><a class="active" href="#home"><i class="fa fa-home"></i></a></li>
-<li><a href="#contact"><i class="fas fa-user-circle"></i></a></li>
-<li><a href="#news"><i class="fas fa-info-circle"></i></a></li>
 <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
 </div>
 <div class="product" style="text-align:center;margin-left:8%;margin-right:45%;padding:1px 16px;">Producten</div>
@@ -83,11 +81,30 @@ include "connection.php";
 		</table>
 		</div>	
 		';
+		$price += $product['price'];
 	}
+
 }
+$_SESSION['price'] = $price;
 	?>
 		
 </div>
+<a class="bon" href="bon.php">bon afdrukken</a>
+<div class="incl">
+<div class="product">
+		<table>
+			<tr>
+				<td>prijs-excl</td>
+				<td><?=number_format($price/100*79,2)?></td>
+			</tr>
+			<tr>
+				<td>prijs-incl</td>
+				<td><?=number_format($price,2)?></td>
+			</tr>
+		</table>
+		</div>
+		</div>
+
 
 </body>
 </html>

@@ -111,7 +111,53 @@ ul {
   width: 500px;
   position:absolute;
   border: 1px solid black;
+  overflow-y: scroll;
 }
-.product-field table{
+.product table{
   width: 100%;
+}
+.bon{
+  position: absolute;
+  left: 13%;
+  top: 502px;
+}
+.product-erbij{
+  border: 1px solid black;
+  width: 500px;
+  height: 450px;
+  left: 30%;
+  position: absolute;
+  float: left;
+  overflow-y: scroll;
+}
+.add{
+  position: absolute;
+  top: 600px;
+  left: 200px;
+}
+.delete{
+  position: absolute;
+  left: 400px;
+  top: 700px;
+}
+.camera{
+  position: absolute;
+  width: 500px;
+  height: 450px;
+  left: 30%;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+.user{
+  position: absolute;
+  left: 30%;
+}
+.incl{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  overflow-y: scroll;
+  left: 27.5%;
+  top: 480px;
 }
