@@ -5,4 +5,3 @@ include 'connection.php'
 <head>
     <link rel="stylesheet" href="vakantie.css">;
     <title>vakantie-huisjes</title>
-</head>
