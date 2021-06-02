@@ -1,0 +1,71 @@
+html{
+  min-height: 100vh;
+  width: 100vw;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+.welkom{
+    width: 600px;
+    height: 100px;
+    color: red;
+    margin-top: 50px;
+    font-size: 50px;
+    padding-top: 35px;
+    margin-left: 27%;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100vw;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #111;
+  } 
+.land{
+  width: 1000px;
+  height: 100px;
+  margin-top: 25px;
+  color: red;
+  font-size: 50px;
+  margin-left: 41%;
+}
+.price{
+  width: 1000px;
+  height: 100px;
+  margin-top: 25px;
+  color: red;
+  font-size: 50px;
+  margin-left: 41%;
+}
+.go-button{
+  color: red;
+  background-color: black;
+  height: 75px;
+  width: 75px;
+  font-size: large;
+  border-radius: 30px;
+  margin-left: 47%;
+}
+.achtergrond{
+  height: 100%;
+  width: 100%;
+  background-image: url("foto-villa.png");
+  position: fixed;
+  z-index: -50;
+}
