@@ -1,6 +1,6 @@
 <?php
-include "header.inc.php";
-echo "contactpage";
+include 'header.inc.php';
+echo 'contactpage';
 ?>
 <style>
     .contactpage{
