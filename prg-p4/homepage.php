@@ -6,10 +6,10 @@ include 'header.inc.php';
         background-color: black;
     }
 </style>
-<div class="welkom"><h2>welkom op vakantiehuisjes.nl</h2>
+<div class="welkom"><h1>welkom op vakantiehuisjes.nl</h1>
 <form action="search.php">
-<div class="land">select land:<input type="text" name="land"/></div>
-<div class="price">price range:<input type="double" name="price"/></div>
+<div class="land">selecteer land:<br><input type="text" name="land"/></div>
+<div class="price">wat mag het kosten:<br><input type="number" name="price"/></div>
 <button type="submit" class="go-button">go</button>
 </form>
 </div>

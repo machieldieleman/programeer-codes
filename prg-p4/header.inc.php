@@ -1,6 +1,6 @@
 <?php
 include 'connection.php';
-//session_start();
+session_start();
 ?>
 <html>
 <head>
@@ -16,5 +16,5 @@ include 'connection.php';
   <li><a class="bungalowpage" href="hotel.php?type=bungalow" <?= isset($_GET["type"]) && $_GET["type"] == "bungalow" ? "style='background-color: black;'" : "" ?>>Bungalows</a></li>
   <li><a class="loginpage" href="login.php">login</a></li>
   <li><a class="overzichtpage" href="overzicht.php">overzicht</a></li>
-  <!-- <li><a class="contactpage" href="contact.php">Contact</a></li> -->
+  <li><a class="logout" href="logout.php">uitloggen</a></li>
 </ul>
